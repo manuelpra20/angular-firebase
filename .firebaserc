@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-manuelpra20": {
+      "hosting": {
+        "virgen3": [
+          "login-manuelpra20"
+        ]
+      }
+    }
+  }
+}

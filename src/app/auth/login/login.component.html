@@ -1,0 +1,32 @@
+<div class="row justify-content-center">
+    <div class="col-md-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <br>
+                <h3 class="text-center h3">LOGIN</h3>
+                <br>
+                <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                    <div class="form-group">
+                        <input formControlName="email" class="form-control" placeholder="email" type="email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input formControlName="password" class="form-control" placeholder="password" type="password">
+                    </div>
+                    <button type="submit" class="my-4 btn-block btn btn-primary btn-lg">Login</button>
+                </form>
+                <div class="form-group mt-3">
+                    <p>
+                        Crea una cuenta<a [routerLink]="['/register']"> Register</a>
+                    </p>
+                </div>
+                <div class="form-group mt-3">
+                    <p>
+
+                        olvidaste la contraseña?<a [routerLink]="['/forgot-password']"> Recuperar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
